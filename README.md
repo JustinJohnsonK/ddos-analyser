@@ -2,7 +2,7 @@
 
 # How to - 
 
-initialize environment >> source ddos-venv/bin/activate
+activate environment >> source ddos-venv/bin/activate
 
 ensure that tshark is runnung in the background and packet details are written to the file "app/packets.csv".
 
