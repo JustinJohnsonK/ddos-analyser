@@ -10,36 +10,44 @@
     <link rel="stylesheet" href="style.css">
     
 </head>
-<body>
-    <div class="container">
-        <div class="navbar"></div>
+<body style="margin: 0px; padding: 0px; background-color:rgb(189, 255, 249);">
+    <div class="container" style="margin:0px; padding: 0px; width: 100%;">
+        <!-- <div class="navbar"></div> -->
 
-        <div class="row">
-            <div class="col-lg-6" style="background-color:cyan; border: 2px solid gray; border-radius: 10px; overflow-x: scroll;">
-                <h3><b>Incoming Packets</b></h3>
+        <div class="row" style="margin: 0px; padding:0px; overflow: hidden;">
+
+            <div class="col-lg-6" style="background-color:rgb(67, 243, 76); border: 2px solid gray; 
+            border-radius: 10px; overflow: scroll; height: 620px; width: 48%; float: left;
+            margin: 10px; padding: 0px;">
+                <div style="position:fixed; color:rgb(168, 16, 16); margin-left: 10px;">
+                    <h3><b>Incoming Packets</b></h3>
+                </div>
                 <!--#collect incoming packets
                     #do necessary filtering 
                     #display all the incoming packets -->
-                <div class="container">
+                <div class="container" style="padding-top: 5em; margin: 0pc;">
                     {{ packets|safe }}
                 </div>
             </div>
             
-            <div class="col-lg-6" style="background-color:crimson; border: 2px solid gray; border-radius: 10px;">
-                <h3><b>Attack Detected</b></h3>
+            <div class="col-lg-6" style="background-color:crimson; border: 2px solid gray; 
+            border-radius: 10px; width: 49%; height: 620px; float: right; margin: 10px; padding: 0px;">
+                <div style="position:fixed; color:rgb(50, 34, 145); margin-left: 10px;">
+                        <h3><b>Detected Attacks</b></h3>
+                    </div>
                 <div class="container">
                 <!--
                     #recieve status from server
                     #display the packet details of ddos-->
-                 {% if attack.status %}
-                    <p>Attack Detected</p>
+                 <!-- {% if attack.status %}
+                    <p>Attacks Detected</p>
                  {% else %}
                     <p>Attack Not Detected</p>
-                 {% endif %}
+                 {% endif %} -->
                 </div>
             </div>
 
-            <div>
+            <div style="float:right;">
                 <a href="#">print</a>
             </div>
 
