@@ -8,6 +8,16 @@
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <!-- <script>
+        function autoRefresh_div() {
+            $("#incoming-packets").load("index.html", function() {
+                setTimeout(autoRefresh_div, 500);
+            });
+        }
+        autoRefresh_div();
+    </script> -->
     
 </head>
 <body style="margin: 0px; padding: 0px; background-color:rgb(189, 255, 249);">
@@ -16,7 +26,7 @@
 
         <div class="row" style="margin: 0px; padding:0px; overflow: hidden;">
 
-            <div class="col-lg-6" style="background-color:rgb(67, 243, 76); border: 2px solid gray; 
+            <div class="col-lg-6 incoming-packets" style="background-color:rgb(67, 243, 76); border: 2px solid gray; 
             border-radius: 10px; overflow: scroll; height: 620px; width: 48%; float: left;
             margin: 10px; padding: 0px;">
                 <div style="position:fixed; color:rgb(168, 16, 16); margin-left: 10px;">
